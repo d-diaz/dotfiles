@@ -1,0 +1,21 @@
+[user]
+	email = david.daniel.diaz@gmail.com
+	name = David Diaz
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper = 
+	helper = !gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !gh auth git-credential
+[core]
+	editor = nano
+[includeIf "gitdir:~/projects/vibrant-planet/"]
+        path = ~/.gitconfig-vp
+[includeIf "hasconfig:remote.*.url:https://github.com/Vibrant-Planet/**"]
+        path = ~/.gitconfig-vp
+[includeIf "hasconfig:remote.*.url:https://github.com/Vibrant-Planet-Open-Science/**"]
+        path = ~/.gitconfig-vp
