@@ -112,3 +112,5 @@ export PATH=$CUDA_HOME/bin:$PATH
 export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
 
 export GPG_TTY=$(tty)
+export BROWSER=wslview
+export AWS_PROFILE=data-prod

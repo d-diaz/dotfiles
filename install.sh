@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # 1. Install Oh My Zsh (unattended)
-if [ ! -d "$HOME/.oh-my-zsh" ]; then
+if [ ! -d "$HOME/.oh-my-zsh/oh-my-zsh.sh" ]; then
     echo "Installing Oh My Zsh..."
+    rm -rf "$HOME/.oh-my-zsh"
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 fi
 
